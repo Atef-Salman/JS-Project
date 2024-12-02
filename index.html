@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="text-container">
+                <h2>Come join us!</h2>
+                <p>We are excited to welcome you!
+                    Haven't already created an account to get access to exclusive offers, rewards and discounts.</p>
+                    <button class="btn btn-primary rounded-5" ><a href="#">Already have an account? Signin.</a></button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="register-container">
+                <h1 class="pt-5 mt-5">Sign In</h1>
+                <input type="text" class="form-control w-75 m-auto mt-3" id="email" name="email" placeholder="email" oninput="validateEmail()">
+                <div id="eMassege" class="w-75 m-auto d-none alert alert-danger">
+                  <span>Enter valid Email : Test2024@gmail.com</span><br>
+                </div>
+                <input type="password"  class="form-control w-75 my-3 m-auto" id="password" name="password" placeholder="password" oninput="validatePassword()">
+                <button type="submit" id="btn" class=" btn btn-primary w-75 my-3 m-auto d-block" disabled> SignIn</button>
+                <div class="social-media-container">
+                    <span>or Signup with</span>
+                    <div class="icons">
+                      <a class="text-decoration-none" href="http://www.facebook.com" target="_blank">
+                        <i class="fa-brands fa-facebook text-primary fs-4"></i>
+                      </a>
+                      <a class="text-decoration-none" href="http://www.google.com" target="_blank">
+                        <i class="fa-brands fa-google-plus text-danger fs-4"></i>
+                      </a>
+                      <a class="text-decoration-none" href="http://www.x.com" target="_blank">
+                        <i class="fa-brands fa-twitter fs-4"></i> 
+                      </a>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="script/main.js"></script>
+      </body>
+</html>
